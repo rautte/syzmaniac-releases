@@ -30,13 +30,13 @@ syz gui update
 ```
 
 This downloads the latest GUI build, installs it to
-`/Applications/syzmaniac-gui.app`, and automatically clears macOS's
+`/Applications/SyzManiac.app`, and automatically clears macOS's
 Gatekeeper quarantine flag — the app isn't signed with an Apple Developer
 ID or notarized yet (an early-rollout tradeoff, not a sign anything's
 wrong), so without this step macOS would otherwise block it on first open.
 
 ```sh
-open /Applications/syzmaniac-gui.app
+open /Applications/SyzManiac.app
 ```
 
 ## Staying up to date
@@ -58,7 +58,7 @@ the machine at all.
 Prefer to do it by hand? Every release page has the raw archives:
 
 - **CLI**: `syz_<version>_<os>_<arch>.tar.gz` for your platform, plus `syz_checksums.txt`.
-- **GUI (macOS)**: `syzmaniac-gui_<version>_macos.zip` — includes a
+- **GUI (macOS)**: `SyzManiac_<version>_macos.zip` — includes a
   "Read me before opening.md" with the exact Gatekeeper bypass steps.
 
 See the [latest release](https://github.com/rautte/syzmaniac-releases/releases/latest).
